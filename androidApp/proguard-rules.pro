@@ -20,6 +20,11 @@
 # Koin
 -keepnames class org.koin.** { *; }
 -keep class org.koin.** { *; }
+# koin-androidx-fragment references these classes which are absent in the Koin
+# version used here; suppress the missing-class errors so R8 doesn't abort.
+-dontwarn org.koin.core.annotation.KoinReflectAPI
+-dontwarn org.koin.core.instance.InstanceBuilderKt
+-dontwarn org.koin.androidx.fragment.dsl.ModuleExtKt
 
 # Kotlin coroutines
 -keepclassmembernames class kotlinx.** {
