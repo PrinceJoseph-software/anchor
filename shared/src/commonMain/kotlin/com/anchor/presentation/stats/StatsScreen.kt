@@ -310,7 +310,7 @@ private fun WeeklyBars(values: List<Int>) {
     val labels = listOf("M", "T", "W", "T", "F", "S", "S")
     val max = (values.maxOrNull() ?: 0).coerceAtLeast(1)
     val todayIdx = remember {
-        Clock.System.now().toLocalDateTime(TimeZone.currentSystemDefault()).dayOfWeek.isoDayNumber - 1
+        Clock.System.now().toLocalDateTime(TimeZone.currentSystemDefault()).dayOfWeek.ordinal
     }
 
     AnchorCard {
