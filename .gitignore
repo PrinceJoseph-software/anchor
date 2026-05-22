@@ -1,0 +1,36 @@
+# Build outputs
+build/
+.gradle/
+*.class
+*.jar
+*.aar
+
+# Local configuration
+local.properties
+*.keystore
+*.jks
+
+# IDE files
+.idea/
+*.iml
+.DS_Store
+
+# Android Studio
+captures/
+.externalNativeBuild/
+.cxx/
+*.ap_
+
+# Kotlin / Compose caches
+**/.kotlin/
+**/generated/
+
+# Claude Code context (project-specific AI assistant notes — not for VCS)
+CLAUDE.md
+.claude/
+
+# Internal verification / scratch docs
+STATS_SCREEN_FIX_VERIFICATION.md
+
+# Local dev audio assets
+stranger_things_notif.wav
