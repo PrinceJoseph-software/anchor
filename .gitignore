@@ -4,6 +4,7 @@ build/
 *.class
 *.jar
 *.aar
+!gradle/wrapper/gradle-wrapper.jar
 
 # Local configuration
 local.properties
